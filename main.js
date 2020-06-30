@@ -33,6 +33,7 @@ function addNewItem(e) {
 
     //add new li to the ul
     itemList.appendChild(li);
+newItem.value="";
 }
 
 function removeItem(e) {
