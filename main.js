@@ -12,12 +12,11 @@ function addNewItem(e) {
     e.preventDefault();
 
     //Get input value
-    let newItem = document.getElementById('item').value;
-
+    let newItem = document.getElementById('item');
     //create new li
     let li = document.createElement('Li');
     //create text node
-    let txtNode = document.createTextNode(newItem);
+    let txtNode = document.createTextNode(newItem.value);
     li.classList.add('list-item');
     //append textnode to li
     li.appendChild(txtNode);
